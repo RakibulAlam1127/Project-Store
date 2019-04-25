@@ -1,0 +1,31 @@
+.main-section{
+    background-image: url("../../img/h.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 255, 0.3);
+    height: 1000px;
+
+}
+
+
+
+.second-section{
+    height: 800px;
+
+
+}
+
+.about{
+  margin-top: 200px;
+}
+
+.fas{
+    color: green;
+}
+
+
+img{
+    height: 282px;
+}
+
+
