@@ -1,3 +1,4 @@
+<?php if (($_SESSION['user']['status'] === 1 && ($_SESSION['admin_name'] ===$_SESSION['user']['username']))) :?>
 
 <?php require_once __DIR__ . '/../partials/dash_head.php'; ?>
 <body>
@@ -8,18 +9,48 @@
         <?php require_once __DIR__ . '/../partials/admin-side-nav.php'; ?>
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-            <p class="display-4 text-center text-success">Welcome <span class="text-danger"><?php echo $_SESSION['user']['username']; ?></span> to the Project Store</p>
-            <p class="h4 text-danger text-center">Current Date : <?php echo date('d/m/Y'); ?></p>
+
+            <div class="row mt-3 d-flex justify-content-around">
+                <div class="col-md-3 bg-danger card-class">
+                    <div class="mt-5 float-md-left">
+                        <h5 class="font-weight-light float-left text-light">All Users</h5> <br>
+                        <h2 class="font-weight-light text-light">20</h2>
+                    </div>
+                    <span class="float-md-right text-warning" style="font-size:100px"><i class="fas fa-users"></i></span>
+                </div>
+
+                <div class="col-md-3 card-class bg-info">
+                    <div class="mt-5 float-md-left">
+                        <h5 class="font-weight-light float-left text-light">All Project</h5> <br>
+                        <h2 class="font-weight-light text-light">50</h2>
+                    </div>
+                    <span class="float-md-right text-light" style="font-size:100px"><i class="fas fa-cloud-upload-alt"></i></span>
+                </div>
+
+                <div class="col-md-3 card-class bg-success">
+                    <div class="mt-5 float-md-left col-md-3">
+                        <h5 class="font-weight-light float-left text-light">Downloads</h5> <br>
+                        <h2 class="font-weight-light text-light">10</h2>
+                    </div>
+                    <span class="float-md-right text-danger" style="font-size:100px"><i class="fa fa-views"></i></span>
+                </div>
+            </div>
+
             <div class="col-6 mx-auto">
                 <?php require_once __DIR__ . '/../partials/_notification.php'; ?>
             </div>
-
-
 
         </main>
     </div>
 </div>
 <?php require_once __DIR__ . '/../partials/dash_footer.php'; ?>
+ <?php else: ?>
+ <?php require 'index.php'; ?>
+<?php endif; ?>
+
+
+
+
 
 
 

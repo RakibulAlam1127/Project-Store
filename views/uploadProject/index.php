@@ -15,8 +15,9 @@
                  <div class="card-header">
                       <h4 class="card-title"></h4>
                  </div>
+                <?php require_once __DIR__.'/../partials/_notification.php'; ?>
                 <div class="card-body">
-                    <form action="" method="post" enctype="multipart/form-data">
+                    <form action="uploadproject" method="post" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="p_name">Name of the Project Title</label>
                             <input type="text" name="title" id="p_name" required placeholder="Name of the title" class="form-control">
@@ -28,7 +29,7 @@
                         <div class="form-group">
                             <label for="category">Category</label>
                             <select name="category" id="category" required class="form-control">
-                                <option>--Select Category--</option>
+                                <option value="">--Select Category--</option>
                                 <?php $categorys = \App\Model\Category::all(); ?>
                                  <?php  foreach ($categorys as $category): ?>
                                        <option value="<?php echo $category->category; ?>"><?php echo $category->category; ?></option>

@@ -160,9 +160,12 @@
                             ];
 
                             if ($user->status === 1){
+                                $_SESSION['admin_name'] = $user->username;
                                 header('Location:dashboard/admin');
+                                $_SESSION['admin'] = 'Admin Panel';
                                 exit();
                             }else{
+                                $_SESSION['user_name'] = $user->username;
                                 header('Location:dashboard');
                                 exit();
                             }

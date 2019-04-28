@@ -1,3 +1,6 @@
+<?php
+if (($_SESSION['user']['status'] === 0 && ($_SESSION['user_name'] === $_SESSION['user']['username']))): ?>
+
 
 <?php require_once __DIR__.'/../partials/dash_head.php'; ?>
 <body>
@@ -43,5 +46,10 @@
     </div>
 </div>
 <?php require_once __DIR__.'/../partials/dash_footer.php';?>
+ <?php else: ?>
+ <?php require 'admin.php'; ?>
+<?php endif; ?>
+
+
 
 
