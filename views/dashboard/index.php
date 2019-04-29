@@ -47,7 +47,7 @@ if (($_SESSION['user']['status'] === 0 && ($_SESSION['user_name'] === $_SESSION[
 </div>
 <?php require_once __DIR__.'/../partials/dash_footer.php';?>
  <?php else: ?>
- <?php require 'admin.php'; ?>
+ <?php require 'index.php'; ?>
 <?php endif; ?>
 
 

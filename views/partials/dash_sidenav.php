@@ -1,4 +1,5 @@
-<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+<?php if ($_SESSION['user']['status'] === 0): ?>
+ <nav class="col-md-2 d-none d-md-block bg-light sidebar">
     <div class="sidebar-sticky">
         <ul class="nav flex-column">
             <li class="nav-item">
@@ -40,3 +41,6 @@
 
     </div>
 </nav>
+<?php else: ?>
+<?php require 'admin-side-nav.php'; ?>
+<?php endif; ?>

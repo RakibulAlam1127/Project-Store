@@ -35,10 +35,16 @@ $router->group(['before' => 'auth','prefix'=>'dashboard'],function(RouteCollecto
     $router->controller('/',DashboardController::class);
     $router->controller('/myproject',MyProjectController::class);
     $router->controller('/uploadproject',UploadProjectController::class);
-    $router->controller('/category',CategoryController::class);
+
     $router->controller('/supervisor',SupervisorController::class);
     $router->controller('/findProject',FindProjectController::class);
+});
 
+
+$router->group(['before'=>'auth','prefix'=>'admin'],function(RouteCollector $router) {
+    $router->controller('/',AdminDashboardController::class);
+    $router->controller('/category',CategoryController::class);
+    $router->controller('/findProject',FindProjectController::class);
 
 });
 

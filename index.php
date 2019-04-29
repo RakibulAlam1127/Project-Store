@@ -40,6 +40,8 @@ define('BASE_URL','http://localhost/project_store/');
 
 //this is Our dashboard access url
 define('DASH_URL','http://localhost/project_store/dashboard/');
+//This is Our Admin dashboard access url
+define('ADMIN_URL','http://localhost/project_store/admin');
 
 require_once 'route.php';
 

@@ -10,12 +10,7 @@
 
        }
 
-       public function getAdmin()
-       {
 
-           view('dashboard/admin');
-
-       }
 
 
    }

@@ -161,7 +161,7 @@
 
                             if ($user->status === 1){
                                 $_SESSION['admin_name'] = $user->username;
-                                header('Location:dashboard/admin');
+                                header('Location:admin');
                                 $_SESSION['admin'] = 'Admin Panel';
                                 exit();
                             }else{
