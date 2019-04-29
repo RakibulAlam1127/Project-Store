@@ -1,4 +1,6 @@
-<?php require_once __DIR__.'/../partials/dash_head.php'; ?>
+<?php use Illuminate\Support\Facades\DB;
+
+require_once __DIR__.'/../partials/dash_head.php'; ?>
 <body>
 <?php require_once __DIR__.'/../partials/dash_nav.php'; ?>
 
@@ -29,7 +31,7 @@
                         </thead>
 
                         <tbody>
-                           <?php $myproject = \App\Model\Project::where('user_id','>',[$_SESSION['user']['id']])->get();?>
+                           <?php  $myproject = \App\Model\Project::where('user_id',$_SESSION['user']['id'])->get();?>
                                  <?php foreach ($myproject as $project):?>
                                <tr>
                                    <td><?php echo $project->id; ?></td>

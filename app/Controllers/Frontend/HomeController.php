@@ -92,9 +92,9 @@
                  //Insert database
                  User::create([
                      'username' => $username,
-                     'email'    => $email,
-                     'password' =>password_hash($password,PASSWORD_BCRYPT),
-                     'photo'     => $file_name.'.'.$ext
+                      'email'    => $email,
+                      'password' =>password_hash($password,PASSWORD_BCRYPT),
+                      'photo'     => $file_name.'.'.$ext
                   ]);
 
                 $_SESSION['success'] = 'Your Registration Successfully Done';
