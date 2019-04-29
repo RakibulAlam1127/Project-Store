@@ -1,6 +1,7 @@
 <?php
 
 use App\Controllers\Backend\AdminDashboardController;
+use App\Controllers\Backend\AllProjectController;
 use App\Controllers\Backend\CategoryController;
 use App\Controllers\Backend\DashboardController;
 use App\Controllers\Backend\FindProjectController;
@@ -45,6 +46,7 @@ $router->group(['before'=>'auth','prefix'=>'admin'],function(RouteCollector $rou
     $router->controller('/',AdminDashboardController::class);
     $router->controller('/category',CategoryController::class);
     $router->controller('/findProject',FindProjectController::class);
+    $router->controller('/allproject',AllProjectController::class);
 
 });
 

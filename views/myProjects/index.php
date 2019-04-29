@@ -23,58 +23,30 @@
                             <th>Published ID</th>
                             <th>Published Year</th>
                             <th>Author Name</th>
+                            <th>View</th>
                             <th>Share</th>
                         </tr>
                         </thead>
 
                         <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Multi-factor Authentication System</td>
-                            <td>Network Security</td>
-                            <td>#A784N</td>
-                            <td>2018-2019</td>
-                            <td>John Smith</td>
-                            <td>
-                                <a href="share.php" class="btn btn-info btn-sm">Share</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Natural  Language Processing</td>
-                            <td>Artificial Intelligence</td>
-                            <td>#A784N</td>
-                            <td>2017-2019</td>
-                            <td>John Alice</td>
-                            <td>
-                                <a href="share.php" class="btn btn-info btn-sm">Share</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Algorithmic Game Theory and Computational Mechanism Design</td>
-                            <td>Artificial Intelligence</td>
-                            <td>#A784N</td>
-                            <td>2018-2019</td>
-                            <td>Mike Bob</td>
-                            <td>
-                                <a href="share.php" class="btn btn-info btn-sm">Share</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
-                            <td>Data Mining</td>
-                            <td>#A784N</td>
-                            <td>2018-2019</td>
-                            <td>John Smith</td>
-                            <td>
-                                <a href="share.php" class="btn btn-info btn-sm">Share</a>
-                            </td>
-                        </tr>
-
-
-
+                           <?php $myproject = \App\Model\Project::where('user_id','>',[$_SESSION['user']['id']])->get();?>
+                                 <?php foreach ($myproject as $project):?>
+                               <tr>
+                                   <td><?php echo $project->id; ?></td>
+                                   <td><?php echo $project->title; ?></td>
+                                   <td><?php echo $project->category; ?></td>
+                                   <td><?php echo $project->user_id; ?></td>
+                                   <td><?php echo $project->year; ?></td>
+                                   <td><?php echo $project->author_name; ?></td>
+                                   <td>
+                                       <a href="view.php?id=<?php echo $project->id; ?>" class="btn btn-info btn-sm">View</a>
+                                   </td>
+                                   <td>
+                                       <a href="share.php?id=<?php echo $project->id; ?>" class="btn btn-info btn-sm">Share</a>
+                                   </td>
+                                   
+                               </tr>
+                             <?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>

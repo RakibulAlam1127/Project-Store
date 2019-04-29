@@ -16,7 +16,7 @@ class UploadProjectController extends Controller{
          $validator = new Validator();
          $errors = [];
          $title = validation($_POST['title']);
-         $file = $_FILES['file'];
+         $project_file = $_FILES['file'];
          $category = validation($_POST['category']);
          $year = validation($_POST['year']);
          $desc = validation($_POST['desc']);
@@ -54,25 +54,33 @@ class UploadProjectController extends Controller{
              $errors['name'] = 'Author name is too short';
          }
 
-          var_dump($_SESSION['user']['id']);
-          die();
+
 
          if (empty($errors)){
              $file_name = 'project_file'.time();
-             $extention = explode('.',$file['name']);
+             $extention = explode('.',$project_file['name']);
              $ext = end($extention);
-             move_uploaded_file($file['tmp_name'],'upload_file/project_file/'.$file_name.'.'.$ext);
+            $upload =  move_uploaded_file($project_file['tmp_name'],'upload_file/project_file/'.$file_name.'.'.$ext);
 
 
-             Project::create([
-               'title' => $title,
-                'file' => $file_name.'.'.$ext,
-                 'category' => $category,
-                 'user_id'  => $_SESSION['user']['id'],
-                 'year' => $year,
-                 'author_name' => $name,
-                 'desc'     => $desc
-             ]);
+             if ($upload){
+
+                 Project::create([
+                     'title' => $title,
+                     'file' => $file_name.'.'.$ext,
+                     'category' => $category,
+                     'user_id'  => $_SESSION['user']['id'],
+                     'year' => $year,
+                     'author_name' => $name,
+                     'desc'     => $desc
+                 ]);
+
+             }else{
+                 $errors['file'] = 'Project File Not Uploaded Successfully';
+                 $_SESSION['errors'] = $errors;
+                 header('Location:uploadproject');
+                 exit();
+             }
 
 
              $_SESSION['success'] = 'Project Uploaded Successfully';

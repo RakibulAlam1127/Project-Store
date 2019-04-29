@@ -9,7 +9,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo ADMIN_URL?>/myproject">
+                <a class="nav-link" href="<?php echo ADMIN_URL?>/allproject">
                     <span data-feather="list"></span>
                     All Projects
                 </a>
