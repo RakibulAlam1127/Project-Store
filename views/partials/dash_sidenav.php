@@ -9,9 +9,9 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="<?php echo DASH_URL;?>profile">
                     <span data-feather="user"></span>
-                    Home
+                    Profile
                 </a>
             </li>
             <li class="nav-item">

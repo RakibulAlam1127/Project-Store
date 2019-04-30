@@ -46,9 +46,10 @@ require_once __DIR__.'/../partials/dash_head.php'; ?>
                                    <td>
                                        <a href="share.php?id=<?php echo $project->id; ?>" class="btn btn-info btn-sm">Share</a>
                                    </td>
-                                   
+
                                </tr>
-                             <?php endforeach; ?>
+
+                             <?php endforeach;  ?>
                         </tbody>
                     </table>
                 </div>

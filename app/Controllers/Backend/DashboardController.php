@@ -11,6 +11,11 @@
        }
 
 
+       public function getProfile()
+       {
+           view('dashboard/profile');
+       }
+
 
 
    }

@@ -36,9 +36,9 @@ $router->group(['before' => 'auth','prefix'=>'dashboard'],function(RouteCollecto
     $router->controller('/',DashboardController::class);
     $router->controller('/myproject',MyProjectController::class);
     $router->controller('/uploadproject',UploadProjectController::class);
-
-    $router->controller('/supervisor',SupervisorController::class);
     $router->controller('/findProject',FindProjectController::class);
+//    $router->controller('/supervisor',SupervisorController::class);
+
 });
 
 
