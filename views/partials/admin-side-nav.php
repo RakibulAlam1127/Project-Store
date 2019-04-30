@@ -3,32 +3,32 @@
     <div class="sidebar-sticky">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link active" href="<?php echo ADMIN_URL;?>">
+                <a class="nav-link <?php if ($page == 'admin'){echo 'active'; }?>" href="<?php echo ADMIN_URL;?>">
                     <span data-feather="home"></span>
                     Dashboard <span class="sr-only">(current)</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo ADMIN_URL?>/allproject">
+                <a class="nav-link <?php if ($page == 'allproject'){echo 'active'; }?>" href="<?php echo ADMIN_URL?>/allproject">
                     <span data-feather="list"></span>
                     All Projects
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo ADMIN_URL;?>/category">
+                <a class="nav-link <?php if ($page == 'category'){echo 'active'; }?>" href="<?php echo ADMIN_URL;?>/category">
                     <span data-feather="plus-circle"></span>
                     Add Project Category
                 </a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo ADMIN_URL;?>/category/edit">
+                <a class="nav-link <?php if ($page == 'categoryedit'){echo 'active'; }?>" href="<?php echo ADMIN_URL;?>/category/edit">
                     <span data-feather="edit"></span>
                     Edit Project Category
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo ADMIN_URL;?>/findProject">
+                <a class="nav-link <?php if ($page == 'findproject'){echo 'active'; }?>" href="<?php echo ADMIN_URL;?>/findProject">
                     <span data-feather="search"></span>
                     Find Projects
                 </a>
@@ -40,7 +40,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo ADMIN_URL; ?>/uploadproject">
+                <a class="nav-link <?php if ($page == 'uploadproject'){echo 'active'; }?>" href="<?php echo ADMIN_URL; ?>/uploadproject">
                     <span data-feather="upload"></span>
                     Upload Project
                 </a>

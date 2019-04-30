@@ -1,6 +1,6 @@
 <?php use App\Model\Category;
 
-
+$page = 'categoryedit';
 require_once __DIR__.'/../partials/dash_head.php'; ?>
 <body>
 <?php require_once __DIR__.'/../partials/dash_nav.php'; ?>

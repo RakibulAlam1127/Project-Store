@@ -1,5 +1,5 @@
 <?php use Illuminate\Support\Facades\DB;
-
+$page = 'myproject';
 require_once __DIR__.'/../partials/dash_head.php'; ?>
 <body>
 <?php require_once __DIR__.'/../partials/dash_nav.php'; ?>

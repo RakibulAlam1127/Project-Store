@@ -47,6 +47,7 @@ $router->group(['before'=>'auth','prefix'=>'admin'],function(RouteCollector $rou
     $router->controller('/category',CategoryController::class);
     $router->controller('/findProject',FindProjectController::class);
     $router->controller('/allproject',AllProjectController::class);
+    $router->controller('/uploadproject',UploadProjectController::class);
 
 });
 

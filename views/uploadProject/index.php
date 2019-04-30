@@ -1,4 +1,5 @@
 <?php require_once __DIR__.'/../partials/dash_head.php'; ?>
+<?php $page = 'uploadproject'; ?>
 <body>
 <?php require_once __DIR__.'/../partials/dash_nav.php'; ?>
 

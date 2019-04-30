@@ -1,5 +1,5 @@
 <?php if (($_SESSION['user']['status'] === 1 && ($_SESSION['admin_name'] ===$_SESSION['user']['username']))) :?>
-
+<?php $page = 'admin'; ?>
 <?php require_once __DIR__ . '/../partials/dash_head.php'; ?>
 <body>
 <?php require_once __DIR__ . '/../partials/dash_nav.php'; ?>
