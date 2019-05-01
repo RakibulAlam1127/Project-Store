@@ -12,7 +12,7 @@
                     <div class="dropdown-menu bg-light">
                         <?php $categorys = \App\Model\Category::all(); ?>
                         <?php foreach ($categorys as $category): ?>
-                            <a href="" class="dropdown-item "><?php echo $category->category; ?></a>
+                            <a href="category?category_item=<?php echo $category->category; ?>" class="dropdown-item "><?php echo $category->category; ?></a>
                             <div class="dropdown-divider"></div>
                         <?php endforeach; ?>
 

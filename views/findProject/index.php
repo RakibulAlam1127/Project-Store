@@ -23,10 +23,10 @@
                             <input type="text" class="form-control mr-3" placeholder="Name of The Project Title">
                             <select name="category" class="form-control mr-3" id="">
                                 <option>Select Category</option>
-                                <option value="human research">Human Research</option>
-                                <option value="Artificial Intelligence">Artificial Intelligence</option>
-                                <option value="Bio-informatics">Bio-informatics</option>
-                                <option value="Natural language Processing">Natural language Processing</option>
+                                <?php $categorys = \App\Model\Category::all(); ?>
+                                <?php foreach ($categorys as $category): ?>
+                                    <option value="<?php $category->category; ?>"><?php echo $category->category; ?></option>
+                                <?php endforeach; ?>
                             </select>
                             <input type="submit" value="Search" class="btn btn-success" name="search">
                         </div>

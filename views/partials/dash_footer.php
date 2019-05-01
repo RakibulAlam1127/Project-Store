@@ -5,14 +5,14 @@
 <script src="<?php echo BASE_URL?>assets/js/popper.min.js"></script>
 <script src="<?php echo BASE_URL?>assets/js/bootstrap.min.js"></script>
 <script src="<?php echo BASE_URL?>assets/js/feather.min.js"></script>
-<script src="<?php echo BASE_URL?>assets/js/dashboard.js"></script></body>
+<script src="<?php echo BASE_URL?>assets/js/dashboard.js"></script>
 
 <script>
     $(document).ready( function () {
         $('#myTable').DataTable();
     } );
 </script>
-
+</body>
 
 
 </html>

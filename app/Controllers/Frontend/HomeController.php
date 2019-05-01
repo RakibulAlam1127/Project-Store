@@ -291,4 +291,13 @@
          {
              view('about');
          }
+
+
+         public function getCategory()
+         {
+             view('category');
+         }
+
+
+
      }
