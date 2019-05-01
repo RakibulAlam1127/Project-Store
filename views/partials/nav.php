@@ -10,13 +10,11 @@
                 <li class="nav-item dropdown">
                     <a href="" class="nav-link text-dark  dropdown-toggle" id="myDrop" data-toggle="dropdown">Categories</a>
                     <div class="dropdown-menu bg-light">
-                        <a href="" class="dropdown-item ">Artificial Intelligence</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="" class="dropdown-item">Network Security</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="" class="dropdown-item">Bio-Informatics</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="" class="dropdown-item">Human Research</a>
+                        <?php $categorys = \App\Model\Category::all(); ?>
+                        <?php foreach ($categorys as $category): ?>
+                            <a href="" class="dropdown-item "><?php echo $category->category; ?></a>
+                            <div class="dropdown-divider"></div>
+                        <?php endforeach; ?>
 
                     </div>
                 </li>

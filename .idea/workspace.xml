@@ -3,20 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="be9ceaca-5b61-470c-8393-49ff8a1585df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/allProject/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/allProject/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/category/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/category/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/category/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/category/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/category/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/category/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/dashboard/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/dashboard/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/dashboard/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/dashboard/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/findProject/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/findProject/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/myProjects/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/myProjects/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/admin-side-nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/admin-side-nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/dash_nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/dash_nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/dash_sidenav.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/dash_sidenav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/uploadProject/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/uploadProject/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,14 +17,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/route.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="49" column="73" selection-start-line="49" selection-start-column="73" selection-end-line="49" selection-end-column="73" />
+            <state relative-caret-position="432">
+              <caret line="34" column="91" selection-start-line="34" selection-start-column="91" selection-end-line="34" selection-end-column="91" />
               <folding>
                 <element signature="e#7#60#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/uploadProject/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="33" column="81" lean-forward="true" selection-start-line="33" selection-start-column="81" selection-end-line="33" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/partials/nav.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="92" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -75,7 +89,6 @@
         <option value="$PROJECT_DIR$/views/about.php" />
         <option value="$PROJECT_DIR$/app/Controllers/Backend/CategoryController.php" />
         <option value="$PROJECT_DIR$/app/Controllers/Backend/FindProjectController.php" />
-        <option value="$PROJECT_DIR$/views/partials/nav.php" />
         <option value="$PROJECT_DIR$/views/dashboard/admin_dashboadr.php" />
         <option value="$PROJECT_DIR$/views/partials/_notification.php" />
         <option value="$PROJECT_DIR$/app/Model/Project.php" />
@@ -101,6 +114,7 @@
         <option value="$PROJECT_DIR$/views/category/update.php" />
         <option value="$PROJECT_DIR$/views/partials/admin-side-nav.php" />
         <option value="$PROJECT_DIR$/route.php" />
+        <option value="$PROJECT_DIR$/views/partials/nav.php" />
       </list>
     </option>
   </component>
@@ -135,7 +149,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,18 +170,13 @@
               <item name="project_store" type="b2602c69:ProjectViewProjectNode" />
               <item name="project_store" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="category" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_store" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="supervisor" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,18 +259,19 @@
       <workItem from="1556552435789" duration="625000" />
       <workItem from="1556553695561" duration="5202000" />
       <workItem from="1556591741814" duration="1187000" />
-      <workItem from="1556601343229" duration="4829000" />
+      <workItem from="1556601343229" duration="5714000" />
+      <workItem from="1556677658217" duration="405000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181875000" />
+    <option name="totallyTimeSpent" value="183165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22995462" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23373677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -441,20 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="57" selection-start-column="57" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -625,13 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/uploadProject/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/allProject/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -690,11 +678,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/route.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="49" column="73" selection-start-line="49" selection-start-column="73" selection-end-line="49" selection-end-column="73" />
+        <state relative-caret-position="432">
+          <caret line="34" column="91" selection-start-line="34" selection-start-column="91" selection-end-line="34" selection-end-column="91" />
           <folding>
             <element signature="e#7#60#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/uploadProject/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="33" column="81" lean-forward="true" selection-start-line="33" selection-start-column="81" selection-end-line="33" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="92" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="92" />
         </state>
       </provider>
     </entry>
