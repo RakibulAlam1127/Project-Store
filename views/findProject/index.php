@@ -1,4 +1,6 @@
-<?php $page = 'findproject'; ?>
+<?php $page = 'findproject';?>
+
+
 <?php require_once __DIR__.'/../partials/dash_head.php'; ?>
 <body>
 <?php require_once __DIR__.'/../partials/dash_nav.php'; ?>
@@ -20,12 +22,12 @@
                     <form  class="form-inline" action="" method="post">
                         <?php require_once __DIR__.'/../partials/_notification.php'; ?>
                         <div class="form-group">
-                            <input type="text" class="form-control mr-3" placeholder="Name of The Project Title">
-                            <select name="category" class="form-control mr-3" id="">
+                            <input type="text" name="title" class="form-control mr-3" required placeholder="Name of The Project Title">
+                            <select name="category" class="form-control mr-3" required id="">
                                 <option>Select Category</option>
                                 <?php $categorys = \App\Model\Category::all(); ?>
                                 <?php foreach ($categorys as $category): ?>
-                                    <option value="<?php $category->category; ?>"><?php echo $category->category; ?></option>
+                                    <option value="<?php echo $category->category; ?>"><?php echo $category->category; ?></option>
                                 <?php endforeach; ?>
                             </select>
                             <input type="submit" value="Search" class="btn btn-success" name="search">
@@ -37,7 +39,9 @@
 
                 </div>
             </div>
-            <small class="mx-auto col-mx-10 text-danger"><strong>0 Result Found</strong></small>
+
+
+
 
         </main>
     </div>
