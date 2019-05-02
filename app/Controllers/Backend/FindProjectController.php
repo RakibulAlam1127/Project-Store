@@ -2,7 +2,6 @@
 namespace App\Controllers\Backend;
 use App\Controllers\Controller;
 use App\Model\Project;
-use Respect\Validation\Validator;
 
 class FindProjectController extends Controller{
 
@@ -32,18 +31,23 @@ class FindProjectController extends Controller{
 
          if (empty($errors)){
 
-             $findProject = Project::where('category',$category)
-                 ->orWhere('title', 'like', '%' .$title. '%')->get();
-              $_SESSION['found'] = $findProject;
-             header('Location:findProject/found');
-             exit();
-
+             $findProject = Project::where('category',$category)->orWhere('title', 'like', '%' .$title. '%')->get();
+              if (count($findProject) >= 1){
+                  $_SESSION['found'] = $findProject;
+                  header('Location:findProject/found');
+                  exit();
+              }else{
+                  $_SESSION['count'] = count($findProject);
+                  $errors['error'] = 'Not Found ';
+                  $_SESSION['errors'] = $errors;
+                  header("Location:findProject");
+                  exit();
+              }
          }else{
-             $_SESSION['errors'] =$errors;
+             $_SESSION['errors'] = $errors;
               header("Location:findProject");
               exit();
          }
-
     }
 
     public function getFound()

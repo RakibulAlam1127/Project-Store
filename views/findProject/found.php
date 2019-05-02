@@ -38,8 +38,8 @@
                             <td><?php echo $project->create_at; ?></td>
 
                             <td>
-                                <a class="btn btn-info btn-sm" href="view.php?id=<?php echo $project->id; ?>">view</a>
-                                <a class="btn btn-info btn-primary btn-sm" href="download.php?id=<?php echo $project->id; ?>">download</a>
+                                <a class="btn btn-info btn-primary btn-sm" href="view?id=<?php echo $project->id; ?>">view</a>
+                                <a class="btn btn-info btn-primary btn-sm" href="download?id=<?php echo $project->id; ?>">download</a>
                             </td>
 
                         </tr>
